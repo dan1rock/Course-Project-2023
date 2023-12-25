@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.screen {
+    background: linear-gradient(90deg, #c1c0d5, #c5b8dc);
+    position: relative;
+    height: 600px;
+    width: 360px;
+    box-shadow: 0 0 24px #5C5696;
+    border-radius: 20px;
+}
+
+.screen__content {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+.screen__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.login {
+    width: 320px;
+    padding: 156px 30px 30px;
+    margin: auto;
+}
+
+.login__field {
+    padding: 20px 0;
+    position: relative;
+}
+
+.login__icon {
+    position: absolute;
+    top: 30px;
+    color: #7875B5;
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #f6f6f6;
+    background: none;
+    padding: 10px 10px 10px 24px;
+    font-weight: 700;
+    font-size: medium;
+    transition: .2s;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+    outline: none;
+    border-bottom-color: #6A679E;
+}
+
+.login__button {
+    background: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #4C489D;
+    box-shadow: 0 2px 2px #343252;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login__button:active,
+.login__button:focus,
+.login__button:hover {
+    background: #e3e3e3;
+}
