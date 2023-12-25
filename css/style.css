@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+    background: #91919a;
 }
 
 .container {
@@ -19,11 +19,11 @@ body {
 }
 
 .screen {
-    background: linear-gradient(90deg, #c1c0d5, #c5b8dc);
+    background: #cdcdd9;
     position: relative;
     height: 600px;
     width: 360px;
-    box-shadow: 0 0 24px #5C5696;
+    box-shadow: 0 0 24px #91919a;
     border-radius: 20px;
 }
 
@@ -46,6 +46,13 @@ body {
     width: 320px;
     padding: 156px 30px 30px;
     margin: auto;
+}
+
+.login__wrap {
+    background: #e1e1ee;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
 }
 
 .login__field {
@@ -91,8 +98,8 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    color: #4C489D;
-    box-shadow: 0 2px 2px #343252;
+    color: #49494d;
+    box-shadow: 0 2px 2px #8b8b94;
     cursor: pointer;
     transition: .2s;
 }
