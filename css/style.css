@@ -54,6 +54,7 @@ body {
     color: #91919a;
     font-weight: bolder;
     font-size: 30px;
+    user-select: none;
 }
 
 .login {

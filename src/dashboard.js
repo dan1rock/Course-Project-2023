@@ -1,14 +1,11 @@
-let sidebarOpen = false;
-const sidebar = document.getElementById('sidebar');
+import React from "react";
 
-const openSidebar = () => {
-    if (sidebarOpen) return;
-    sidebar.classList.add('sidebar-responsive');
-    sidebarOpen = true;
+function MyComponent() {
+    return (
+        <div>
+            <h1>Hello from React!</h1>
+        </div>
+    );
 }
 
-const closeSidebar = () => {
-    if (!sidebarOpen) return;
-    sidebar.classList.remove('sidebar-responsive');
-    sidebarOpen = false;
-}
+ReactDOM.render(React.createElement(MyComponent), document.getElementById('main_content'));
