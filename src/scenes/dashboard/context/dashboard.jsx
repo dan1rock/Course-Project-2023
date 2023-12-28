@@ -8,7 +8,7 @@ const Dashboard = () => {
             <div className="main-title">
                 <p className="font-weight-bold">DASHBOARD</p>
             </div>
-            <Box height="250px" m="-20px 0 0 0" bgcolor="#ffffff" borderRadius="20px">
+            <Box className="item-container">
                 <LineChart data={mockLineData} bottomLegend="Data1" sideLegend="Data2"/>
             </Box>
         </div>

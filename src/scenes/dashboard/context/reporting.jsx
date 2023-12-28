@@ -1,6 +1,7 @@
 import LineChart from "../../../components/lineChart";
-import {mockLineData} from "../../../data/mockData";
-import {Box} from "@mui/material";
+import BarChart from "../../../components/barChart";
+import { mockLineData, mockBarData } from "../../../data/mockData";
+import { Box } from "@mui/material";
 
 const Reporting = () => {
     return (
@@ -9,14 +10,14 @@ const Reporting = () => {
                 <p className="font-weight-bold">REPORTING</p>
             </div>
             <Box display="flex">
-                <Box height="250px" m="-20px 10px 0 -5px" bgcolor="#ffffff" borderRadius="20px" flex="50%">
+                <Box className="item-container" m="-20px 10px 0 -5px" flex="50%">
                     <LineChart data={mockLineData} bottomLegend="Data1" sideLegend="Data2"/>
                 </Box>
-                <Box height="250px" m="-20px 0 0 0" bgcolor="#ffffff" borderRadius="20px" flex="50%">
-                    <LineChart data={mockLineData} bottomLegend="Data1" sideLegend="Data2"/>
+                <Box className="item-container" m="-20px 0 0 0" flex="50%">
+                    <BarChart data={mockBarData} bottomLegend="Data1" sideLegend="Data2"/>
                 </Box>
             </Box>
-            <Box height="350px" m="10px 0 0 0" bgcolor="#ffffff" borderRadius="20px">
+            <Box className="item-container" height="350px" m="10px 0 0 0">
                 <LineChart data={mockLineData} bottomLegend="Data1" sideLegend="Data2"/>
             </Box>
         </div>
