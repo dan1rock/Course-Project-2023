@@ -39,6 +39,11 @@ const Sidebar = () => {
                     to="/admins"
                 />
                 <Item
+                    icon="help"
+                    text="FAQ"
+                    to="/faq"
+                />
+                <Item
                     icon="settings"
                     text="Settings"
                     to="/settings"

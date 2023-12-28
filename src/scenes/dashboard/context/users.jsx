@@ -62,10 +62,10 @@ const Users = () => {
                         }
                         borderRadius="4px"
                     >
-                        <Box marginY="auto" ml="15px">
+                        <Box marginY="auto" marginLeft="5px" alignSelf="left">
                             <span className="material-icons-outlined">{icon}</span>
                         </Box>
-                        <Typography  m="auto" ml="5px">
+                        <Typography  m="auto">
                             {access}
                         </Typography>
                     </Box>

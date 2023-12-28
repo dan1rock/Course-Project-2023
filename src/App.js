@@ -5,6 +5,7 @@ import Reporting from "./scenes/dashboard/context/reporting";
 import Users from "./scenes/dashboard/context/users";
 import Admins from "./scenes/dashboard/context/admins";
 import Settings from "./scenes/dashboard/context/settings";
+import FAQ from "./scenes/dashboard/context/faq";
 import {Route, Routes} from "react-router-dom";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                         <Route path="/reporting" element={<Reporting/>} />
                         <Route path="/users" element={<Users/>} />
                         <Route path="/admins" element={<Admins/>} />
+                        <Route path="/faq" element={<FAQ/>} />
                         <Route path="/settings" element={<Settings/>} />
                     </Routes>
                 </main>
