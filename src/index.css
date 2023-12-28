@@ -123,6 +123,7 @@ code {
 .main-title {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 25px;
 }
 
 .main-title > p {
