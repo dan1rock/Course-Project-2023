@@ -317,3 +317,36 @@ export const mockBarData = [
         donutColor: "hsl(274, 70%, 50%)",
     },
 ];
+
+export const mockPieData = [
+    {
+        id: "1",
+        label: "1",
+        value: 239,
+        color: "#56D926FF",
+    },
+    {
+        id: "2",
+        label: "2",
+        value: 170,
+        color: "#26D9A3FF",
+    },
+    {
+        id: "3",
+        label: "3",
+        value: 322,
+        color: "#BE26D9FF",
+    },
+    {
+        id: "4",
+        label: "4",
+        value: 503,
+        color: "#2647D9FF",
+    },
+    {
+        id: "5",
+        label: "5",
+        value: 584,
+        color: "#D92656FF",
+    },
+];
