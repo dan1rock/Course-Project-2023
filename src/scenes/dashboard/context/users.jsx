@@ -1,8 +1,13 @@
 import { DataGrid } from "@mui/x-data-grid";
 import { Box, Typography } from "@mui/material";
 import { mockUsers } from "../../../data/mockData";
+import {useContext} from "react";
+import {ColorModeContext, palette} from "../../../theme";
 
 const Users = () => {
+    const colorMode = useContext(ColorModeContext);
+    const colors = palette(colorMode.getMode());
+
     const columns = [
         {
             field: "id",
@@ -82,19 +87,35 @@ const Users = () => {
             <Box
                 sx={{
                     "& .MuiDataGrid-columnHeaders": {
-                        backgroundColor: "#fcfcfc",
+                        backgroundColor: colors.itemContainerLighter,
+                        color: colors.default,
+                        borderColor: colors.borderColor,
                     },
                     "& .MuiDataGrid-virtualScroller": {
-                        backgroundColor: "#f8f8f8",
+                        backgroundColor: colors.itemContainer,
+                        color: colors.default,
+                        borderColor: colors.borderColor,
                     },
                     "& .MuiDataGrid-footerContainer": {
-                        backgroundColor: "#fcfcfc",
+                        backgroundColor: colors.itemContainerLighter,
+                        color: colors.default,
+                        borderColor: colors.borderColor,
                     },
                     "& .MuiCheckbox-root": {
                         color: "#ffffff",
                     },
+                    "& .MuiToolbar-root": {
+                        color: colors.default,
+                    },
                 }}>
-                <DataGrid columns={columns} rows={mockUsers}/>
+                <DataGrid
+                    columns={columns}
+                    rows={mockUsers}
+                    sx={{
+                        borderColor: colors.borderColor,
+                        color: colors.default,
+                    }}
+                />
             </Box>
         </div>
     );

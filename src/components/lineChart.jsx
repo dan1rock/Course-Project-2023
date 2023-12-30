@@ -1,6 +1,11 @@
 import { ResponsiveLine } from "@nivo/line";
+import {ColorModeContext, palette} from "../theme";
+import {useContext} from "react";
 
 const LineChart = ({ data, sideLegend, bottomLegend }) => {
+    const colorMode = useContext(ColorModeContext);
+    const colors = palette(colorMode.getMode());
+
     return (
         <ResponsiveLine
             data={data}
@@ -8,14 +13,14 @@ const LineChart = ({ data, sideLegend, bottomLegend }) => {
                 axis: {
                     domain: {
                         line: {
-                            stroke: "#666666",
+                            stroke: colors.default,
                         },
                     },
                     legend: {
                         text: {
                             fontSize: 12,
                             fontWeight: 600,
-                            fill: "#666666",
+                            fill: colors.default,
                         },
                     },
                     ticks: {
@@ -26,7 +31,7 @@ const LineChart = ({ data, sideLegend, bottomLegend }) => {
                         text: {
                             fontSize: 12,
                             fontWeight: 600,
-                            fill: "#666666",
+                            fill: colors.default,
                         },
                     },
                 },
@@ -34,7 +39,7 @@ const LineChart = ({ data, sideLegend, bottomLegend }) => {
                     text: {
                         fontSize: 12,
                         fontWeight: 600,
-                        fill: "#666666",
+                        fill: colors.default,
                     },
                 },
                 tooltip: {

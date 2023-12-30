@@ -1,4 +1,4 @@
-import {useMode, ColorModeContext} from "./theme";
+import {useMode, ColorModeContext, palette} from "./theme";
 import Sidebar from "./scenes/dashboard/sidebar";
 import Topbar from "./scenes/dashboard/topbar";
 import Dashboard from "./scenes/dashboard/context/dashboard";
@@ -8,9 +8,11 @@ import Admins from "./scenes/dashboard/context/admins";
 import Settings from "./scenes/dashboard/context/settings";
 import FAQ from "./scenes/dashboard/context/faq";
 import {Route, Routes} from "react-router-dom";
+import {Box} from "@mui/material"
 
 const App = () => {
     const colorMode = useMode();
+    const colors = palette(colorMode.getMode());
 
     return (
         <ColorModeContext.Provider value={colorMode}>
@@ -19,7 +21,7 @@ const App = () => {
                         <Topbar/>
                         <Sidebar/>
 
-                        <main className="main-container">
+                        <Box className="main-container" bgcolor={colors.defaultBackground}>
                             <Routes>
                                 <Route path="/" element={<Dashboard/>} />
                                 <Route path="/reporting" element={<Reporting/>} />
@@ -28,7 +30,7 @@ const App = () => {
                                 <Route path="/faq" element={<FAQ/>} />
                                 <Route path="/settings" element={<Settings/>} />
                             </Routes>
-                        </main>
+                        </Box>
                     </div>
                 </div>
         </ColorModeContext.Provider>

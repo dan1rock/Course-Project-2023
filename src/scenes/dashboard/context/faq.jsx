@@ -2,17 +2,29 @@ import { Box, Typography, Accordion } from "@mui/material";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import {ExpandMoreOutlined} from "@mui/icons-material";
+import {useContext} from "react";
+import {ColorModeContext, palette} from "../../../theme";
 
 const Question = ({ title, body }) => {
+    const colorMode = useContext(ColorModeContext);
+    const colors = palette(colorMode.getMode());
+
     return (
-        <Accordion defaultExpanded={true}>
+        <Accordion
+            defaultExpanded={true}
+            sx={{
+                backgroundColor: colors.itemContainer,
+                color: colors.default,
+                borderRadius: "20px",
+            }}
+        >
             <AccordionSummary expandIcon={<ExpandMoreOutlined />}>
-                <Typography fontWeight="600" variant="h5">
+                <Typography fontWeight="600" variant="h5" color={colors.default}>
                     {title}
                 </Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography>
+                <Typography color={colors.default}>
                     {body}
                 </Typography>
             </AccordionDetails>

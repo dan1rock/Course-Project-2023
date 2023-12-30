@@ -15,7 +15,12 @@ const Settings = () => {
             <div className="main-title">
                 <p className="font-weight-bold">SETTINGS</p>
             </div>
-            <Box className="item-container" height="auto" display="flex" bgcolor={colors.itemContainer}>
+            <Box
+                className="item-container"
+                height="auto" display="flex"
+                bgcolor={colors.itemContainer}
+                color={colors.default}
+            >
                 <Box marginY="auto" marginLeft="50px" fontWeight="600">Dark Mode</Box>
                 <Box marginLeft="40px">
                     <Switch

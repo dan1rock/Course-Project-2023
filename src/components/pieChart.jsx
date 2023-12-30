@@ -1,6 +1,11 @@
 import { ResponsivePie } from "@nivo/pie";
+import {useContext} from "react";
+import {ColorModeContext, palette} from "../theme";
 
 const PieChart = ({ data }) => {
+    const colorMode = useContext(ColorModeContext);
+    const colors = palette(colorMode.getMode());
+
     return (
         <ResponsivePie
             data={data}
@@ -8,27 +13,27 @@ const PieChart = ({ data }) => {
                 axis: {
                     domain: {
                         line: {
-                            stroke: "#666666",
+                            stroke: colors.default,
                         },
                     },
                     legend: {
                         text: {
-                            fill: "#666666",
+                            fill: colors.default,
                         },
                     },
                     ticks: {
                         line: {
-                            stroke: "#666666",
+                            stroke: colors.default,
                             strokeWidth: 1,
                         },
                         text: {
-                            fill: "#666666",
+                            fill: colors.default,
                         },
                     },
                 },
                 legends: {
                     text: {
-                        fill: "#666666",
+                        fill: colors.default,
                     },
                 },
             }}
@@ -42,7 +47,7 @@ const PieChart = ({ data }) => {
                 modifiers: [["darker", 0.2]],
             }}
             arcLinkLabelsSkipAngle={10}
-            arcLinkLabelsTextColor="#666666"
+            arcLinkLabelsTextColor={colors.default}
             arcLinkLabelsThickness={2}
             arcLinkLabelsColor={{ from: "color" }}
             enableArcLabels={false}
