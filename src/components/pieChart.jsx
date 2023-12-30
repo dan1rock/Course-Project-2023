@@ -32,7 +32,7 @@ const PieChart = ({ data }) => {
                     },
                 },
             }}
-            margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
+            margin={{ top: 40, right: 60, bottom: 40, left: 100 }}
             innerRadius={0.5}
             padAngle={0.7}
             cornerRadius={3}
@@ -77,7 +77,7 @@ const PieChart = ({ data }) => {
                     anchor: "left",
                     direction: "column",
                     justify: false,
-                    translateX: -20,
+                    translateX: -40,
                     translateY: 0,
                     itemsSpacing: 0,
                     itemWidth: 100,
