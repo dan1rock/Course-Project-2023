@@ -1,10 +1,9 @@
 module.exports = {
     transform: {
-        "\\.[jt]sx?$": "babel-jest",
-        "^.+\\.[tj]s$": "ts-jest"
+        "\\.[jt]sx?$": "babel-jest"
     },
     transformIgnorePatterns: [
-        "!node_modules/"
+        "!node_modules/(!?d3)"
     ],
     "testEnvironment": "jsdom"
 };
