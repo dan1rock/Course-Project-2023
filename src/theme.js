@@ -3,6 +3,7 @@ import {createContext, useMemo, useState} from "react";
 export const palette = (mode) => ({
     ...(mode === "dark"
         ? {
+            testColor: "#000",
             itemContainer: "#373b4b",
             itemContainerLighter: "#43485b",
             defaultBackground: "#1b1c25",
@@ -10,6 +11,7 @@ export const palette = (mode) => ({
             borderColor: "#15161e",
         }
         : {
+            testColor: "#fff",
             itemContainer: "#f8f8f8",
             itemContainerLighter: "#ffffff",
             defaultBackground: "#e6e8ed",

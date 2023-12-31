@@ -34,7 +34,7 @@ const Question = ({ title, body }) => {
 
 const FAQ = () => {
     return (
-        <div id="main_content">
+        <div id="faq">
             <div className="main-title">
                 <p className="font-weight-bold">FAQ</p>
             </div>

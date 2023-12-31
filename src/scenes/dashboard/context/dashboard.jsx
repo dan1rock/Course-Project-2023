@@ -9,7 +9,7 @@ const Dashboard = () => {
     const colors = palette(colorMode.getMode());
 
     return (
-        <div id="main_content">
+        <div id="dashboard">
             <div className="main-title">
                 <p className="font-weight-bold">DASHBOARD</p>
             </div>

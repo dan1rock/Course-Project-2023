@@ -80,7 +80,7 @@ const Users = () => {
         ];
 
     return (
-        <div id="main_content">
+        <div id="users">
             <div className="main-title">
                 <p className="font-weight-bold">USERS</p>
             </div>

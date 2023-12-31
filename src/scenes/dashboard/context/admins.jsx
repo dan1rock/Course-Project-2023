@@ -1,6 +1,6 @@
 const Admins = () => {
     return (
-        <div id="main_content">
+        <div id="admins">
             <div className="main-title">
                 <p className="font-weight-bold">ADMINS</p>
             </div>

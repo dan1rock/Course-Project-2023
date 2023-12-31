@@ -11,7 +11,7 @@ const Settings = () => {
     };
 
     return (
-        <div id="main_content">
+        <div id="settings">
             <div className="main-title">
                 <p className="font-weight-bold">SETTINGS</p>
             </div>

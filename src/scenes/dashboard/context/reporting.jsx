@@ -11,7 +11,7 @@ const Reporting = () => {
     const colors = palette(colorMode.getMode());
 
     return (
-        <div id="main_content">
+        <div id="reporting">
             <div className="main-title">
                 <p className="font-weight-bold">REPORTING</p>
             </div>

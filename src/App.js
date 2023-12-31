@@ -16,15 +16,15 @@ const App = () => {
 
     return (
         <ColorModeContext.Provider value={colorMode}>
-                <div className="app">
+                <div className="app" id="app">
                     <div className="grid-container">
                         <Topbar/>
                         <Sidebar/>
 
                         <Box className="main-container" bgcolor={colors.defaultBackground}>
                             <Routes>
-                                <Route path="/" element={<Dashboard/>} />
-                                <Route path="/reporting" element={<Reporting/>} />
+                                <Route path="/" element={<Dashboard/>}/>
+                                <Route path="/reporting" element={<Reporting/>}/>
                                 <Route path="/users" element={<Users/>} />
                                 <Route path="/admins" element={<Admins/>} />
                                 <Route path="/faq" element={<FAQ/>} />
