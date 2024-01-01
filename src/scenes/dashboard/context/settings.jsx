@@ -20,6 +20,7 @@ const Settings = () => {
                 height="auto" display="flex"
                 bgcolor={colors.itemContainer}
                 color={colors.default}
+                id="theme-switch"
             >
                 <Box marginY="auto" marginLeft="50px" fontWeight="600">Dark Mode</Box>
                 <Box marginLeft="40px">

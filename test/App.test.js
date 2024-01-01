@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from "../src/App";
 import '@testing-library/jest-dom/extend-expect';
 import {BrowserRouter, MemoryRouter} from "react-router-dom";
