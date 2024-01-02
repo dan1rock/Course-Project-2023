@@ -14,5 +14,7 @@ test('Admins renders correctly', () => {
 
 test('Admins renders title', () => {
     const titleElement = document.getElementsByClassName("main-title")[0];
+
+    expect(titleElement).toBeInTheDocument();
     expect(titleElement.innerHTML).toContain("ADMINS");
 });

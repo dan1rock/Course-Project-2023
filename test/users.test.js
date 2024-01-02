@@ -14,6 +14,8 @@ test('Users renders correctly', () => {
 
 test('Users renders title', () => {
     const titleElement = document.getElementsByClassName("main-title")[0];
+
+    expect(titleElement).toBeInTheDocument();
     expect(titleElement.innerHTML).toContain("USERS");
 });
 
@@ -24,6 +26,7 @@ test('Users renders data grid', () => {
 test('data grid contains all necessary columns', () => {
     const headers = document.getElementsByClassName("MuiDataGrid-columnHeaders")[0];
 
+    expect(headers).toBeInTheDocument();
     expect(headers.innerHTML).toContain("ID");
     expect(headers.innerHTML).toContain("Name");
 });

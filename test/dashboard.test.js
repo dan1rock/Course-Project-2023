@@ -14,6 +14,8 @@ test('Dashboard renders correctly', () => {
 
 test('Dashboard renders title', () => {
     const titleElement = document.getElementsByClassName("main-title")[0];
+
+    expect(titleElement).toBeInTheDocument();
     expect(titleElement.innerHTML).toContain("DASHBOARD");
 });
 
