@@ -76,7 +76,7 @@ export const mockUsers = [
 export const mockLineData = [
     {
         id: "japan",
-        color: "#D9C726FF",
+        color: "#61cdbb",
         data: [
             {
                 x: "1",
@@ -130,7 +130,7 @@ export const mockLineData = [
     },
     {
         id: "france",
-        color: "#2647D9FF",
+        color: "#e8c1a0",
         data: [
             {
                 x: "1",
@@ -184,7 +184,7 @@ export const mockLineData = [
     },
     {
         id: "us",
-        color: "#D92662FF",
+        color: "#f47560",
         data: [
             {
                 x: "1",
